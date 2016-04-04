@@ -1,0 +1,6 @@
+name = Desarol
+description = This theme whatever.
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = styles.css
