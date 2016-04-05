@@ -1,0 +1,15 @@
+// Layout Max
+//
+// Markup: layout-max.hbs
+//
+// Style guide: components.layout-max
+
+@import "components/clearfix/clearfix";
+
+.layout-max,
+%layout-max {
+  @include clearfix();
+  max-width: 1060px;
+  margin: auto;
+  padding: 1rem;
+}

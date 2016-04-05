@@ -258,7 +258,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'z609AwBdQHUFav_KD9a1GUKmPdiFcXegbyGHD-ev4lY';
+$drupal_hash_salt = '6jJRXaukJfCsohbdH1qbgxDzCfpzY6iwkjMoDJfxev8';
 
 /**
  * Base URL (optional).

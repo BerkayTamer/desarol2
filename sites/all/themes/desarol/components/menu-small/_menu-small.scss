@@ -1,0 +1,119 @@
+@import "components/breakpoint/breakpoint";
+
+.menu-small {
+  margin-right: 0;
+  clear: left;
+  line-height: 2.5;
+  padding: 0 0 0 0;
+  @include breakpoint($breakpoint__medium) {
+    display: none;
+  }
+  &.menu-small--active {
+    display: block;
+  }
+  @include breakpoint($breakpoint__large) {
+    clear: none;
+  }
+}
+
+.menu-small__open-close {
+  cursor: pointer;
+  float: right;
+  &:hover {
+    color: #00bfc6;
+  }
+  @include breakpoint($breakpoint__large) {
+    display: none;
+  }
+}
+
+.menu-small__button-open {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5rem 1.5rem 0 0;
+  @include breakpoint($breakpoint__medium) {
+    display: none;
+  }
+  &:hover {
+    fill: #00bfc6;
+  }
+  .menu-small--active & {
+    display: none;
+  }
+}
+
+.menu-small__button-close {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.5rem 1.5rem 0 0;
+  @include breakpoint($breakpoint__medium) {
+    display: none;
+  }
+  :hover {
+    fill: #00bfc6;
+  }
+  .menu-small--active & {
+    display: block;
+    @include breakpoint($breakpoint__medium) {
+      display: none;
+    }
+  }
+}
+
+.menu-small__list {
+  display: none;
+  list-style: none;
+  padding-top: 1rem;
+  padding-left: 0;
+  margin: 0;
+  @include breakpoint($breakpoint__medium) {
+    display: none;
+    padding-top: 0;
+  }
+  .menu-small--active & {
+    display: block;
+  }
+}
+
+.menu-small__link {
+  padding: 0 0 0 1rem;
+  text-decoration: none;
+  color: #444444;
+  text-transform: uppercase;
+  font-family: 'AmsiPro-Bold','Helvetica Neue',Helvetica,sans-serif;
+  font-weight: bolder;
+  font-size: .8rem;
+  display: block;
+  list-style: none;
+  border-bottom: 2px solid transparent;
+  @include breakpoint($breakpoint__medium) {
+   display: none;
+  }
+  &:hover {
+    border-bottom: 2px solid #00bfc6;
+  }
+}
+
+.menu-small__button {
+  display: none;
+  color: white;
+  background-color: #00bfc6;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  font-family: 'AmsiPro-Bold','Helvetica Neue',Helvetica,sans-serif;
+  font-size: 0.875em;
+  .menu-small--active & {
+    display: block;
+  }
+  @include breakpoint($breakpoint__medium) {
+    display: none !important;
+  }
+}
+
+
+

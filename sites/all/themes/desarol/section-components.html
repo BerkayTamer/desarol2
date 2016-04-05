@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body id="kss-node">
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">KSS Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-components.html">
+          <span class="kss-nav__ref">1</span
+          ><span class="kss-nav__name">components</span>
+        </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components-clearfix">
+                <span class="kss-nav__ref ">1.1</span
+                ><span class="kss-nav__name">Clearfix</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components-credentials">
+                <span class="kss-nav__ref ">1.2</span
+                ><span class="kss-nav__name">Credentials</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components-feature">
+                <span class="kss-nav__ref ">1.3</span
+                ><span class="kss-nav__name">Feature</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components-footer-questions-locations">
+                <span class="kss-nav__ref ">1.4</span
+                ><span class="kss-nav__name">Footer Questions and Locations</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components-header">
+                <span class="kss-nav__ref ">1.5</span
+                ><span class="kss-nav__name">Header</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components-layout-max">
+                <span class="kss-nav__ref ">1.6</span
+                ><span class="kss-nav__name">Layout Max</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components-main-menu">
+                <span class="kss-nav__ref ">1.7</span
+                ><span class="kss-nav__name">Main Menu</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components-template-homepage">
+                <span class="kss-nav__ref ">1.8</span
+                ><span class="kss-nav__name">Template Homepage</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-components.html#kssref-components-testimonial">
+                <span class="kss-nav__ref ">1.9</span
+                ><span class="kss-nav__name">Testimonial</span>
+              </a>
+            </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+      <div     id="kssref-components" class="kss-section kss-section--depth-1">
+
+    <div class="kss-style">
+      <h1 class="kss-title kss-title--level-1">
+        <a class="kss-title__permalink" href="#kssref-components">
+          <span class="kss-title__ref">
+              1
+            <span class="kss-title__permalink-hash">
+                #components
+            </span>
+          </span>
+          components
+        </a>
+      </h1>
+
+
+    </div>
+
+
+      </div>
+      <section id="kssref-components-clearfix" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components-clearfix">
+          <span class="kss-title__ref">
+              1.1
+            <span class="kss-title__permalink-hash">
+                #components.clearfix
+            </span>
+          </span>
+          Clearfix
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Allows the bottom of an element to extend to the bottom of all floated child
+elements. See <a href="http://nicolasgallagher.com/micro-clearfix-hack/">http://nicolasgallagher.com/micro-clearfix-hack/</a></p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="clearfix">
+  <div style="float: left; height: 50px; width: 50%;">A floated item.</div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;clearfix&quot;&gt;
+  &lt;div style=&quot;float: left; height: 50px; width: 50%;&quot;&gt;A floated item.&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components-credentials" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components-credentials">
+          <span class="kss-title__ref">
+              1.2
+            <span class="kss-title__permalink-hash">
+                #components.credentials
+            </span>
+          </span>
+          Credentials
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+           <div class="credentials">
+
+        <h2 class="credentials__title">Over 1,900 students have graduated from Dev Bootcamp.</h2>
+
+        <h3 class="credentials__description">Dev Bootcamp is the first short-term, immersive bootcamp that transforms beginners into full-stack web developers in 19 weeks (9 weeks remote part-time + 9 weeks on-site full time + 1 week career prep).</h3>
+
+        <div class="credentials__list">
+
+            <div class="credentials__list-item">
+
+                <img class="credentials__icon" src="images/computer.png"/>
+
+                <h4 class="credentials__list-item-title">Build Web Development Skills</h4>
+
+                <p class="credentials__list-item-description">Learn the fundamentals of Ruby, the Rails application framework, the ins and outs of JavaScript, plus HTML and CSS. Put it all together with pair programming, agile development, and test-driven methodology.</p>
+
+            </div>
+
+            <div class="credentials__list-item">
+
+                <img class="credentials__icon" src="images/megaphone.png"/>
+
+                <h4 class="credentials__list-item-title">Learn to Listen & Lead</h4>
+
+                <p class="credentials__list-item-description">Develop essential non-technical skills like empathy, listening, relationship-building, and leadership that will make you invaluable to dynamic, highly collaborative teams.</p>
+
+            </div>
+
+            <div class="credentials__list-item">
+
+                <img class="credentials__icon" src="images/idcard.png"/>
+
+                <h4 class="credentials__list-item-title">Land a Job</h4>
+
+                <p class="credentials__list-item-description">Get practical advice on building a portfolio, networking, and preparing for technical interviews from our dedicated careers staff (even after you graduate).</p>
+
+            </div>
+
+            <div class="credentials__list-item">
+
+                <img class="credentials__icon" src="images/map.png"/>
+
+                <h4 class="credentials__list-item-title">Stay Connected</h4>
+
+                <p class="credentials__list-item-description">Connect with fellow Dev Bootcamp alumni who energize development teams in companies of all sizes across the U.S.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html"> &lt;div class=&quot;credentials&quot;&gt;
+
+        &lt;h2 class=&quot;credentials__title&quot;&gt;Over 1,900 students have graduated from Dev Bootcamp.&lt;/h2&gt;
+
+        &lt;h3 class=&quot;credentials__description&quot;&gt;Dev Bootcamp is the first short-term, immersive bootcamp that transforms beginners into full-stack web developers in 19 weeks (9 weeks remote part-time + 9 weeks on-site full time + 1 week career prep).&lt;/h3&gt;
+
+        &lt;div class=&quot;credentials__list&quot;&gt;
+
+            &lt;div class=&quot;credentials__list-item&quot;&gt;
+
+                &lt;img class=&quot;credentials__icon&quot; src=&quot;images/computer.png&quot;/&gt;
+
+                &lt;h4 class=&quot;credentials__list-item-title&quot;&gt;Build Web Development Skills&lt;/h4&gt;
+
+                &lt;p class=&quot;credentials__list-item-description&quot;&gt;Learn the fundamentals of Ruby, the Rails application framework, the ins and outs of JavaScript, plus HTML and CSS. Put it all together with pair programming, agile development, and test-driven methodology.&lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class=&quot;credentials__list-item&quot;&gt;
+
+                &lt;img class=&quot;credentials__icon&quot; src=&quot;images/megaphone.png&quot;/&gt;
+
+                &lt;h4 class=&quot;credentials__list-item-title&quot;&gt;Learn to Listen &amp; Lead&lt;/h4&gt;
+
+                &lt;p class=&quot;credentials__list-item-description&quot;&gt;Develop essential non-technical skills like empathy, listening, relationship-building, and leadership that will make you invaluable to dynamic, highly collaborative teams.&lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class=&quot;credentials__list-item&quot;&gt;
+
+                &lt;img class=&quot;credentials__icon&quot; src=&quot;images/idcard.png&quot;/&gt;
+
+                &lt;h4 class=&quot;credentials__list-item-title&quot;&gt;Land a Job&lt;/h4&gt;
+
+                &lt;p class=&quot;credentials__list-item-description&quot;&gt;Get practical advice on building a portfolio, networking, and preparing for technical interviews from our dedicated careers staff (even after you graduate).&lt;/p&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class=&quot;credentials__list-item&quot;&gt;
+
+                &lt;img class=&quot;credentials__icon&quot; src=&quot;images/map.png&quot;/&gt;
+
+                &lt;h4 class=&quot;credentials__list-item-title&quot;&gt;Stay Connected&lt;/h4&gt;
+
+                &lt;p class=&quot;credentials__list-item-description&quot;&gt;Connect with fellow Dev Bootcamp alumni who energize development teams in companies of all sizes across the U.S.&lt;/p&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components-feature" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components-feature">
+          <span class="kss-title__ref">
+              1.3
+            <span class="kss-title__permalink-hash">
+                #components.feature
+            </span>
+          </span>
+          Feature
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="feature">
+
+    <div class="feature__transparent">
+
+        <div class="feature__title">Code yourself a new future</div>
+
+        <div class="feature__title-description">Become a web developer with the tech industry's first immersive coding school.</div>
+
+        <a class="feature__button" href="/">Start an application</a>
+
+    </div>
+
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;feature&quot;&gt;
+
+    &lt;div class=&quot;feature__transparent&quot;&gt;
+
+        &lt;div class=&quot;feature__title&quot;&gt;Code yourself a new future&lt;/div&gt;
+
+        &lt;div class=&quot;feature__title-description&quot;&gt;Become a web developer with the tech industry&#x27;s first immersive coding school.&lt;/div&gt;
+
+        &lt;a class=&quot;feature__button&quot; href=&quot;/&quot;&gt;Start an application&lt;/a&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components-footer-questions-locations" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components-footer-questions-locations">
+          <span class="kss-title__ref">
+              1.4
+            <span class="kss-title__permalink-hash">
+                #components.footer-questions-locations
+            </span>
+          </span>
+          Footer Questions and Locations
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          
+
+
+<div class="footer-questions-locations">
+
+    <div class="footer-questions-locations__questions">
+
+        <div class="footer-questions-locations__title">Questions?</div>
+
+        <div class="footer-questions-locations__contact-list">
+
+            <div class="footer-questions-locations__contact-list-email">Email us</div>
+
+            <div class="footer-questions-locations__contact-list-phone">555-867-5309</div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-questions-locations__locations">
+
+        <div class="footer-questions-locations__title">Find a location:</div>
+
+        <div class="footer-questions-locations__locations-list">
+
+            <a class="footer-questions-locations__item" href="#">Costa Rica</a>
+
+            <a class="footer-questions-locations__item" href="#">Australia</a>
+
+            <a class="footer-questions-locations__item" href="#">United States</a>
+
+            <a class="footer-questions-locations__item" href="#">Turkey</a>
+
+            <a class="footer-questions-locations__item" href="#">Indonesia</a>
+
+            <a class="footer-questions-locations__item" href="#">Morocco</a>
+
+        </div>
+
+    </div>
+
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">
+
+
+&lt;div class=&quot;footer-questions-locations&quot;&gt;
+
+    &lt;div class=&quot;footer-questions-locations__questions&quot;&gt;
+
+        &lt;div class=&quot;footer-questions-locations__title&quot;&gt;Questions?&lt;/div&gt;
+
+        &lt;div class=&quot;footer-questions-locations__contact-list&quot;&gt;
+
+            &lt;div class=&quot;footer-questions-locations__contact-list-email&quot;&gt;Email us&lt;/div&gt;
+
+            &lt;div class=&quot;footer-questions-locations__contact-list-phone&quot;&gt;555-867-5309&lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;footer-questions-locations__locations&quot;&gt;
+
+        &lt;div class=&quot;footer-questions-locations__title&quot;&gt;Find a location:&lt;/div&gt;
+
+        &lt;div class=&quot;footer-questions-locations__locations-list&quot;&gt;
+
+            &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Costa Rica&lt;/a&gt;
+
+            &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Australia&lt;/a&gt;
+
+            &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;United States&lt;/a&gt;
+
+            &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Turkey&lt;/a&gt;
+
+            &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Indonesia&lt;/a&gt;
+
+            &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Morocco&lt;/a&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components-header" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components-header">
+          <span class="kss-title__ref">
+              1.5
+            <span class="kss-title__permalink-hash">
+                #components.header
+            </span>
+          </span>
+          Header
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="header">
+
+    <a href="/">
+        <img class="header__logo" src="images/devbootcamp-logo-new.png"/>
+    </a>
+
+
+
+    <div class="menu-small">
+
+        <div class="menu-small__open-close">
+            <svg class="menu-small__button-open" width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"/></svg>
+            <svg class="menu-small__button-close" width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"/></svg>
+        </div>
+
+      <ul class="menu-small__list">
+        <li class="menu-small__item">
+          <a class="menu-small__link" href="/">our program</a>
+        </li>
+        <li class="menu-small__item">
+          <a class="menu-small__link" href="/">locations</a>
+        </li>
+        <li class="menu-small__item">
+          <a class="menu-small__link" href="/">career services</a>
+        </li>
+        <li class="menu-small__item">
+          <a class="menu-small__link" href="/">events & tours</a>
+        </li>
+        <li class="menu-small__item">
+          <a class="menu-small__link" href="/">tuition</a>
+        </li>
+        <li class="menu-small__item">
+          <a class="menu-small__link" href="/">schedule</a>
+        </li>
+        <li class="menu-small__item">
+          <a class="menu-small__link" href="/">faq</a>
+        </li>
+      </ul>
+
+      <a class="menu-small__button" href="/">apply now</a>
+    </div>
+
+
+  <div class="main-menu">
+  
+    <ul class="main-menu__list">
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/">our program</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/">career services</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/">events & tours</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/">tuition</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/">schedule</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/">faq</a>
+      </li>
+    </ul>
+  
+    <a class="main-menu__button" href="/">apply now</a>
+  
+  </div>
+
+</div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;header&quot;&gt;
+
+    &lt;a href=&quot;/&quot;&gt;
+        &lt;img class=&quot;header__logo&quot; src=&quot;images/devbootcamp-logo-new.png&quot;/&gt;
+    &lt;/a&gt;
+
+
+
+    &lt;div class=&quot;menu-small&quot;&gt;
+
+        &lt;div class=&quot;menu-small__open-close&quot;&gt;
+            &lt;svg class=&quot;menu-small__button-open&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 1792 1792&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z&quot;/&gt;&lt;/svg&gt;
+            &lt;svg class=&quot;menu-small__button-close&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 1792 1792&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z&quot;/&gt;&lt;/svg&gt;
+        &lt;/div&gt;
+
+      &lt;ul class=&quot;menu-small__list&quot;&gt;
+        &lt;li class=&quot;menu-small__item&quot;&gt;
+          &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;our program&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-small__item&quot;&gt;
+          &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;locations&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-small__item&quot;&gt;
+          &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;career services&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-small__item&quot;&gt;
+          &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;events &amp; tours&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-small__item&quot;&gt;
+          &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;tuition&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-small__item&quot;&gt;
+          &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;schedule&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;menu-small__item&quot;&gt;
+          &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;faq&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;a class=&quot;menu-small__button&quot; href=&quot;/&quot;&gt;apply now&lt;/a&gt;
+    &lt;/div&gt;
+
+
+  &lt;div class=&quot;main-menu&quot;&gt;
+  
+    &lt;ul class=&quot;main-menu__list&quot;&gt;
+      &lt;li class=&quot;main-menu__item&quot;&gt;
+        &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;our program&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;main-menu__item&quot;&gt;
+        &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;career services&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;main-menu__item&quot;&gt;
+        &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;events &amp; tours&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;main-menu__item&quot;&gt;
+        &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;tuition&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;main-menu__item&quot;&gt;
+        &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;schedule&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;main-menu__item&quot;&gt;
+        &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;faq&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  
+    &lt;a class=&quot;main-menu__button&quot; href=&quot;/&quot;&gt;apply now&lt;/a&gt;
+  
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components-layout-max" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components-layout-max">
+          <span class="kss-title__ref">
+              1.6
+            <span class="kss-title__permalink-hash">
+                #components.layout-max
+            </span>
+          </span>
+          Layout Max
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="layout-max">
+    Aliquam lobortis. Fusce convallis metus id felis luctus adipiscing. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Morbi mattis ullamcorper velit. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
+
+    Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Quisque malesuada placerat nisl. Nulla sit amet est. Suspendisse potenti. Sed cursus turpis vitae tortor.
+
+    Vivamus consectetuer hendrerit lacus. Phasellus gravida semper nisi. Aliquam erat volutpat. Fusce convallis metus id felis luctus adipiscing. Suspendisse feugiat.
+</div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;layout-max&quot;&gt;
+    Aliquam lobortis. Fusce convallis metus id felis luctus adipiscing. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui. Morbi mattis ullamcorper velit. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede.
+
+    Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Quisque malesuada placerat nisl. Nulla sit amet est. Suspendisse potenti. Sed cursus turpis vitae tortor.
+
+    Vivamus consectetuer hendrerit lacus. Phasellus gravida semper nisi. Aliquam erat volutpat. Fusce convallis metus id felis luctus adipiscing. Suspendisse feugiat.
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components-main-menu" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components-main-menu">
+          <span class="kss-title__ref">
+              1.7
+            <span class="kss-title__permalink-hash">
+                #components.main-menu
+            </span>
+          </span>
+          Main Menu
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="main-menu">
+
+  <ul class="main-menu__list">
+    <li class="main-menu__item">
+      <a class="main-menu__link" href="/">our program</a>
+    </li>
+    <li class="main-menu__item">
+      <a class="main-menu__link" href="/">career services</a>
+    </li>
+    <li class="main-menu__item">
+      <a class="main-menu__link" href="/">events & tours</a>
+    </li>
+    <li class="main-menu__item">
+      <a class="main-menu__link" href="/">tuition</a>
+    </li>
+    <li class="main-menu__item">
+      <a class="main-menu__link" href="/">schedule</a>
+    </li>
+    <li class="main-menu__item">
+      <a class="main-menu__link" href="/">faq</a>
+    </li>
+  </ul>
+
+  <a class="main-menu__button" href="/">apply now</a>
+
+</div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;main-menu&quot;&gt;
+
+  &lt;ul class=&quot;main-menu__list&quot;&gt;
+    &lt;li class=&quot;main-menu__item&quot;&gt;
+      &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;our program&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;main-menu__item&quot;&gt;
+      &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;career services&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;main-menu__item&quot;&gt;
+      &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;events &amp; tours&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;main-menu__item&quot;&gt;
+      &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;tuition&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;main-menu__item&quot;&gt;
+      &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;schedule&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;main-menu__item&quot;&gt;
+      &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;faq&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;a class=&quot;main-menu__button&quot; href=&quot;/&quot;&gt;apply now&lt;/a&gt;
+
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components-template-homepage" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components-template-homepage">
+          <span class="kss-title__ref">
+              1.8
+            <span class="kss-title__permalink-hash">
+                #components.template-homepage
+            </span>
+          </span>
+          Template Homepage
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="wrapper">
+
+  <div class="header">
+  
+      <a href="/">
+          <img class="header__logo" src="images/devbootcamp-logo-new.png"/>
+      </a>
+  
+  
+  
+      <div class="menu-small">
+  
+          <div class="menu-small__open-close">
+              <svg class="menu-small__button-open" width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"/></svg>
+              <svg class="menu-small__button-close" width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"/></svg>
+          </div>
+  
+        <ul class="menu-small__list">
+          <li class="menu-small__item">
+            <a class="menu-small__link" href="/">our program</a>
+          </li>
+          <li class="menu-small__item">
+            <a class="menu-small__link" href="/">locations</a>
+          </li>
+          <li class="menu-small__item">
+            <a class="menu-small__link" href="/">career services</a>
+          </li>
+          <li class="menu-small__item">
+            <a class="menu-small__link" href="/">events & tours</a>
+          </li>
+          <li class="menu-small__item">
+            <a class="menu-small__link" href="/">tuition</a>
+          </li>
+          <li class="menu-small__item">
+            <a class="menu-small__link" href="/">schedule</a>
+          </li>
+          <li class="menu-small__item">
+            <a class="menu-small__link" href="/">faq</a>
+          </li>
+        </ul>
+  
+        <a class="menu-small__button" href="/">apply now</a>
+      </div>
+  
+  
+    <div class="main-menu">
+    
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/">our program</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/">career services</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/">events & tours</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/">tuition</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/">schedule</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/">faq</a>
+        </li>
+      </ul>
+    
+      <a class="main-menu__button" href="/">apply now</a>
+    
+    </div>
+  
+  </div>
+
+  <div class="feature">
+  
+      <div class="feature__transparent">
+  
+          <div class="feature__title">Code yourself a new future</div>
+  
+          <div class="feature__title-description">Become a web developer with the tech industry's first immersive coding school.</div>
+  
+          <a class="feature__button" href="/">Start an application</a>
+  
+      </div>
+  
+  </div>
+   <div class="credentials">
+  
+          <h2 class="credentials__title">Over 1,900 students have graduated from Dev Bootcamp.</h2>
+  
+          <h3 class="credentials__description">Dev Bootcamp is the first short-term, immersive bootcamp that transforms beginners into full-stack web developers in 19 weeks (9 weeks remote part-time + 9 weeks on-site full time + 1 week career prep).</h3>
+  
+          <div class="credentials__list">
+  
+              <div class="credentials__list-item">
+  
+                  <img class="credentials__icon" src="images/computer.png"/>
+  
+                  <h4 class="credentials__list-item-title">Build Web Development Skills</h4>
+  
+                  <p class="credentials__list-item-description">Learn the fundamentals of Ruby, the Rails application framework, the ins and outs of JavaScript, plus HTML and CSS. Put it all together with pair programming, agile development, and test-driven methodology.</p>
+  
+              </div>
+  
+              <div class="credentials__list-item">
+  
+                  <img class="credentials__icon" src="images/megaphone.png"/>
+  
+                  <h4 class="credentials__list-item-title">Learn to Listen & Lead</h4>
+  
+                  <p class="credentials__list-item-description">Develop essential non-technical skills like empathy, listening, relationship-building, and leadership that will make you invaluable to dynamic, highly collaborative teams.</p>
+  
+              </div>
+  
+              <div class="credentials__list-item">
+  
+                  <img class="credentials__icon" src="images/idcard.png"/>
+  
+                  <h4 class="credentials__list-item-title">Land a Job</h4>
+  
+                  <p class="credentials__list-item-description">Get practical advice on building a portfolio, networking, and preparing for technical interviews from our dedicated careers staff (even after you graduate).</p>
+  
+              </div>
+  
+              <div class="credentials__list-item">
+  
+                  <img class="credentials__icon" src="images/map.png"/>
+  
+                  <h4 class="credentials__list-item-title">Stay Connected</h4>
+  
+                  <p class="credentials__list-item-description">Connect with fellow Dev Bootcamp alumni who energize development teams in companies of all sizes across the U.S.</p>
+  
+              </div>
+  
+          </div>
+  
+      </div>
+  <div class="testimonial">
+  
+    <div class="testimonial__transparent">
+      <div class="testimonial__items">
+        <img class="testimonial-image" src="images/lauren-scott.jpg">
+  
+        <p class="testimonial__paragraph">
+          "I will say this about Dev Bootcamp in general: out of all the experiences I have had in my life, I have never
+          had anything change my life as much as this."
+        </p>
+  
+        <div class="testimonial-author">
+          - Lauren Scott, Foxes
+        </div>
+      </div>
+  
+      <div class="testimonial__items">
+        <img class="testimonial-image" src="images/mohit-ramchandani.jpg">
+  
+        <div class="testimonial__paragraph">
+          "Graduating Dev Bootcamp leaves you with more than just skills; you come out with a new mentality and attitude
+          that prepares you to face any problem in the world."
+        </div>
+  
+        <div class="testimonial-author">
+          - Mohit Ramchandani, Fox Squirrels
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  
+  <div class="footer-questions-locations">
+  
+      <div class="footer-questions-locations__questions">
+  
+          <div class="footer-questions-locations__title">Questions?</div>
+  
+          <div class="footer-questions-locations__contact-list">
+  
+              <div class="footer-questions-locations__contact-list-email">Email us</div>
+  
+              <div class="footer-questions-locations__contact-list-phone">555-867-5309</div>
+  
+          </div>
+  
+      </div>
+  
+      <div class="footer-questions-locations__locations">
+  
+          <div class="footer-questions-locations__title">Find a location:</div>
+  
+          <div class="footer-questions-locations__locations-list">
+  
+              <a class="footer-questions-locations__item" href="#">Costa Rica</a>
+  
+              <a class="footer-questions-locations__item" href="#">Australia</a>
+  
+              <a class="footer-questions-locations__item" href="#">United States</a>
+  
+              <a class="footer-questions-locations__item" href="#">Turkey</a>
+  
+              <a class="footer-questions-locations__item" href="#">Indonesia</a>
+  
+              <a class="footer-questions-locations__item" href="#">Morocco</a>
+  
+          </div>
+  
+      </div>
+  
+  </div>
+
+
+</div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;wrapper&quot;&gt;
+
+  &lt;div class=&quot;header&quot;&gt;
+  
+      &lt;a href=&quot;/&quot;&gt;
+          &lt;img class=&quot;header__logo&quot; src=&quot;images/devbootcamp-logo-new.png&quot;/&gt;
+      &lt;/a&gt;
+  
+  
+  
+      &lt;div class=&quot;menu-small&quot;&gt;
+  
+          &lt;div class=&quot;menu-small__open-close&quot;&gt;
+              &lt;svg class=&quot;menu-small__button-open&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 1792 1792&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z&quot;/&gt;&lt;/svg&gt;
+              &lt;svg class=&quot;menu-small__button-close&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 1792 1792&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z&quot;/&gt;&lt;/svg&gt;
+          &lt;/div&gt;
+  
+        &lt;ul class=&quot;menu-small__list&quot;&gt;
+          &lt;li class=&quot;menu-small__item&quot;&gt;
+            &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;our program&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;menu-small__item&quot;&gt;
+            &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;locations&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;menu-small__item&quot;&gt;
+            &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;career services&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;menu-small__item&quot;&gt;
+            &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;events &amp; tours&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;menu-small__item&quot;&gt;
+            &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;tuition&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;menu-small__item&quot;&gt;
+            &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;schedule&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;menu-small__item&quot;&gt;
+            &lt;a class=&quot;menu-small__link&quot; href=&quot;/&quot;&gt;faq&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+  
+        &lt;a class=&quot;menu-small__button&quot; href=&quot;/&quot;&gt;apply now&lt;/a&gt;
+      &lt;/div&gt;
+  
+  
+    &lt;div class=&quot;main-menu&quot;&gt;
+    
+      &lt;ul class=&quot;main-menu__list&quot;&gt;
+        &lt;li class=&quot;main-menu__item&quot;&gt;
+          &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;our program&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;main-menu__item&quot;&gt;
+          &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;career services&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;main-menu__item&quot;&gt;
+          &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;events &amp; tours&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;main-menu__item&quot;&gt;
+          &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;tuition&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;main-menu__item&quot;&gt;
+          &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;schedule&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;main-menu__item&quot;&gt;
+          &lt;a class=&quot;main-menu__link&quot; href=&quot;/&quot;&gt;faq&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    
+      &lt;a class=&quot;main-menu__button&quot; href=&quot;/&quot;&gt;apply now&lt;/a&gt;
+    
+    &lt;/div&gt;
+  
+  &lt;/div&gt;
+
+  &lt;div class=&quot;feature&quot;&gt;
+  
+      &lt;div class=&quot;feature__transparent&quot;&gt;
+  
+          &lt;div class=&quot;feature__title&quot;&gt;Code yourself a new future&lt;/div&gt;
+  
+          &lt;div class=&quot;feature__title-description&quot;&gt;Become a web developer with the tech industry&#x27;s first immersive coding school.&lt;/div&gt;
+  
+          &lt;a class=&quot;feature__button&quot; href=&quot;/&quot;&gt;Start an application&lt;/a&gt;
+  
+      &lt;/div&gt;
+  
+  &lt;/div&gt;
+   &lt;div class=&quot;credentials&quot;&gt;
+  
+          &lt;h2 class=&quot;credentials__title&quot;&gt;Over 1,900 students have graduated from Dev Bootcamp.&lt;/h2&gt;
+  
+          &lt;h3 class=&quot;credentials__description&quot;&gt;Dev Bootcamp is the first short-term, immersive bootcamp that transforms beginners into full-stack web developers in 19 weeks (9 weeks remote part-time + 9 weeks on-site full time + 1 week career prep).&lt;/h3&gt;
+  
+          &lt;div class=&quot;credentials__list&quot;&gt;
+  
+              &lt;div class=&quot;credentials__list-item&quot;&gt;
+  
+                  &lt;img class=&quot;credentials__icon&quot; src=&quot;images/computer.png&quot;/&gt;
+  
+                  &lt;h4 class=&quot;credentials__list-item-title&quot;&gt;Build Web Development Skills&lt;/h4&gt;
+  
+                  &lt;p class=&quot;credentials__list-item-description&quot;&gt;Learn the fundamentals of Ruby, the Rails application framework, the ins and outs of JavaScript, plus HTML and CSS. Put it all together with pair programming, agile development, and test-driven methodology.&lt;/p&gt;
+  
+              &lt;/div&gt;
+  
+              &lt;div class=&quot;credentials__list-item&quot;&gt;
+  
+                  &lt;img class=&quot;credentials__icon&quot; src=&quot;images/megaphone.png&quot;/&gt;
+  
+                  &lt;h4 class=&quot;credentials__list-item-title&quot;&gt;Learn to Listen &amp; Lead&lt;/h4&gt;
+  
+                  &lt;p class=&quot;credentials__list-item-description&quot;&gt;Develop essential non-technical skills like empathy, listening, relationship-building, and leadership that will make you invaluable to dynamic, highly collaborative teams.&lt;/p&gt;
+  
+              &lt;/div&gt;
+  
+              &lt;div class=&quot;credentials__list-item&quot;&gt;
+  
+                  &lt;img class=&quot;credentials__icon&quot; src=&quot;images/idcard.png&quot;/&gt;
+  
+                  &lt;h4 class=&quot;credentials__list-item-title&quot;&gt;Land a Job&lt;/h4&gt;
+  
+                  &lt;p class=&quot;credentials__list-item-description&quot;&gt;Get practical advice on building a portfolio, networking, and preparing for technical interviews from our dedicated careers staff (even after you graduate).&lt;/p&gt;
+  
+              &lt;/div&gt;
+  
+              &lt;div class=&quot;credentials__list-item&quot;&gt;
+  
+                  &lt;img class=&quot;credentials__icon&quot; src=&quot;images/map.png&quot;/&gt;
+  
+                  &lt;h4 class=&quot;credentials__list-item-title&quot;&gt;Stay Connected&lt;/h4&gt;
+  
+                  &lt;p class=&quot;credentials__list-item-description&quot;&gt;Connect with fellow Dev Bootcamp alumni who energize development teams in companies of all sizes across the U.S.&lt;/p&gt;
+  
+              &lt;/div&gt;
+  
+          &lt;/div&gt;
+  
+      &lt;/div&gt;
+  &lt;div class=&quot;testimonial&quot;&gt;
+  
+    &lt;div class=&quot;testimonial__transparent&quot;&gt;
+      &lt;div class=&quot;testimonial__items&quot;&gt;
+        &lt;img class=&quot;testimonial-image&quot; src=&quot;images/lauren-scott.jpg&quot;&gt;
+  
+        &lt;p class=&quot;testimonial__paragraph&quot;&gt;
+          &quot;I will say this about Dev Bootcamp in general: out of all the experiences I have had in my life, I have never
+          had anything change my life as much as this.&quot;
+        &lt;/p&gt;
+  
+        &lt;div class=&quot;testimonial-author&quot;&gt;
+          - Lauren Scott, Foxes
+        &lt;/div&gt;
+      &lt;/div&gt;
+  
+      &lt;div class=&quot;testimonial__items&quot;&gt;
+        &lt;img class=&quot;testimonial-image&quot; src=&quot;images/mohit-ramchandani.jpg&quot;&gt;
+  
+        &lt;div class=&quot;testimonial__paragraph&quot;&gt;
+          &quot;Graduating Dev Bootcamp leaves you with more than just skills; you come out with a new mentality and attitude
+          that prepares you to face any problem in the world.&quot;
+        &lt;/div&gt;
+  
+        &lt;div class=&quot;testimonial-author&quot;&gt;
+          - Mohit Ramchandani, Fox Squirrels
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  
+  
+  
+  &lt;div class=&quot;footer-questions-locations&quot;&gt;
+  
+      &lt;div class=&quot;footer-questions-locations__questions&quot;&gt;
+  
+          &lt;div class=&quot;footer-questions-locations__title&quot;&gt;Questions?&lt;/div&gt;
+  
+          &lt;div class=&quot;footer-questions-locations__contact-list&quot;&gt;
+  
+              &lt;div class=&quot;footer-questions-locations__contact-list-email&quot;&gt;Email us&lt;/div&gt;
+  
+              &lt;div class=&quot;footer-questions-locations__contact-list-phone&quot;&gt;555-867-5309&lt;/div&gt;
+  
+          &lt;/div&gt;
+  
+      &lt;/div&gt;
+  
+      &lt;div class=&quot;footer-questions-locations__locations&quot;&gt;
+  
+          &lt;div class=&quot;footer-questions-locations__title&quot;&gt;Find a location:&lt;/div&gt;
+  
+          &lt;div class=&quot;footer-questions-locations__locations-list&quot;&gt;
+  
+              &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Costa Rica&lt;/a&gt;
+  
+              &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Australia&lt;/a&gt;
+  
+              &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;United States&lt;/a&gt;
+  
+              &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Turkey&lt;/a&gt;
+  
+              &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Indonesia&lt;/a&gt;
+  
+              &lt;a class=&quot;footer-questions-locations__item&quot; href=&quot;#&quot;&gt;Morocco&lt;/a&gt;
+  
+          &lt;/div&gt;
+  
+      &lt;/div&gt;
+  
+  &lt;/div&gt;
+
+
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-components-testimonial" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-components-testimonial">
+          <span class="kss-title__ref">
+              1.9
+            <span class="kss-title__permalink-hash">
+                #components.testimonial
+            </span>
+          </span>
+          Testimonial
+        </a>
+      </h2>
+
+
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div class="testimonial">
+
+  <div class="testimonial__transparent">
+    <div class="testimonial__items">
+      <img class="testimonial-image" src="images/lauren-scott.jpg">
+
+      <p class="testimonial__paragraph">
+        "I will say this about Dev Bootcamp in general: out of all the experiences I have had in my life, I have never
+        had anything change my life as much as this."
+      </p>
+
+      <div class="testimonial-author">
+        - Lauren Scott, Foxes
+      </div>
+    </div>
+
+    <div class="testimonial__items">
+      <img class="testimonial-image" src="images/mohit-ramchandani.jpg">
+
+      <div class="testimonial__paragraph">
+        "Graduating Dev Bootcamp leaves you with more than just skills; you come out with a new mentality and attitude
+        that prepares you to face any problem in the world."
+      </div>
+
+      <div class="testimonial-author">
+        - Mohit Ramchandani, Fox Squirrels
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;testimonial&quot;&gt;
+
+  &lt;div class=&quot;testimonial__transparent&quot;&gt;
+    &lt;div class=&quot;testimonial__items&quot;&gt;
+      &lt;img class=&quot;testimonial-image&quot; src=&quot;images/lauren-scott.jpg&quot;&gt;
+
+      &lt;p class=&quot;testimonial__paragraph&quot;&gt;
+        &quot;I will say this about Dev Bootcamp in general: out of all the experiences I have had in my life, I have never
+        had anything change my life as much as this.&quot;
+      &lt;/p&gt;
+
+      &lt;div class=&quot;testimonial-author&quot;&gt;
+        - Lauren Scott, Foxes
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;testimonial__items&quot;&gt;
+      &lt;img class=&quot;testimonial-image&quot; src=&quot;images/mohit-ramchandani.jpg&quot;&gt;
+
+      &lt;div class=&quot;testimonial__paragraph&quot;&gt;
+        &quot;Graduating Dev Bootcamp leaves you with more than just skills; you come out with a new mentality and attitude
+        that prepares you to face any problem in the world.&quot;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;testimonial-author&quot;&gt;
+        - Mohit Ramchandani, Fox Squirrels
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+</article>
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script>
+  prettyPrint();
+</script>
+<script src="js/bundle.js"></script>
+
+
+
+<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

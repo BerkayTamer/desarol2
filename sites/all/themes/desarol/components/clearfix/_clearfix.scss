@@ -1,0 +1,32 @@
+// Clearfix
+//
+// Allows the bottom of an element to extend to the bottom of all floated child
+// elements. See http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// Markup: clearfix.hbs
+//
+// Style guide: components.clearfix
+
+@mixin clearfix() {
+  &:before {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix,
+%clearfix {
+  @include clearfix();
+}
+
+
+
+body {
+  background: red;
+}

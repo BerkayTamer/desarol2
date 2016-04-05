@@ -1,0 +1,81 @@
+// Main Menu
+//
+// Markup: main-menu.hbs
+//
+// Style guide: components.main-menu
+
+
+@import "components/breakpoint/breakpoint";
+
+.main-menu {
+  display: none;
+
+  @include breakpoint($breakpoint__medium) {
+    display: block;
+    width: 100%;
+  }
+  @include breakpoint($breakpoint__large) {
+    float: right;
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.main-menu__list {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  @include breakpoint($breakpoint__medium) {
+    display: block;
+    padding-top: .7rem;
+  }
+  @include breakpoint($breakpoint__large) {
+    display: inline-block;
+    padding-top: 0;
+  }
+}
+
+
+.main-menu__item {
+  list-style: none;
+  padding-left: 1.5rem;
+  display: inline-block;
+}
+
+.main-menu__link {
+  border-bottom: 3px solid transparent;
+  display: inline-block;
+  text-decoration: none;
+  color: #444444;
+  text-transform: uppercase;
+  font-family: 'AmsiPro-Bold', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+  &:hover {
+    color: #00bfc6;
+    border-bottom: 3px solid #00bfc6;
+  }
+}
+
+.main-menu__button {
+  display: inline-block;
+  text-decoration: none;
+  color: #00bfc6;
+  text-transform: uppercase;
+  border: solid 2px;
+  border-radius: 6px;
+  font-family: 'AmsiPro-Bold','Helvetica Neue',Helvetica,sans-serif;
+  font-weight: 600;
+  margin: .5rem 2rem;
+  padding: .5rem 1rem .5rem 1rem;
+  &:hover {
+    background-color: #00bfc6;
+    color: white;
+  }
+}

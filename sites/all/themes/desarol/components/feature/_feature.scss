@@ -1,0 +1,66 @@
+// Feature
+//
+// Markup: feature.hbs
+//
+// Style guide: components.feature
+
+
+.feature {
+  background-image: url('/images/junglecodeschool.jpg');
+}
+
+.feature__transparent {
+  padding: 5rem 1rem;
+  margin: auto;
+  min-width: 390px;
+  width: 70%;
+  height: 100%;
+  background-color: rgba(black, .75);
+}
+
+.feature__title {
+  margin: auto;
+  max-width: 600px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'AmsiPro-Light', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 3.3em;
+  font-weight: 300;
+  color: white;
+
+  @include breakpoint(800px) {
+    font-size: 4.6em;
+  }
+}
+
+.feature__title-description {
+  margin: auto;
+  padding: 2rem 2rem 1rem 2rem;
+  max-width: 500px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.6em;
+  font-weight: normal;
+  color: white;
+  font-family: 'AmsiPro-Light','Helvetica Neue',Helvetica,sans-serif;
+  @include breakpoint(800px) {
+    font-size: 1.8em;
+    max-width: 550px;
+  }
+}
+
+.feature__button {
+  display: block;
+  max-width: 245px;
+  margin: 1.3rem auto 0;
+  padding: 1rem 2rem;
+  color: #624e00;
+  background-color: #eac100;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'AmsiPro-Light','Helvetica Neue',Helvetica,sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 5px;
+}

@@ -1,0 +1,33 @@
+// Header
+//
+// Markup: header.hbs
+//
+// Style guide: components.header
+
+
+@import "components/breakpoint/breakpoint";
+
+.header {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  @include breakpoint($breakpoint__medium) {
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
+
+.header__logo {
+  display: inline-block;
+  width: 220px;
+  padding-top: .5rem;
+  padding-left: 1rem;
+  float: left;
+  @include breakpoint($breakpoint__medium) {
+    float: none;
+  }
+  @include breakpoint($breakpoint__large) {
+    float: left;
+  }
+}
+
+
