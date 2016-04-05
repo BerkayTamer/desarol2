@@ -5,11 +5,13 @@
 // Style guide: components.feature
 
 
-.feature {
+.feature,
+%feature {
   background-image: url('/sites/all/themes/desarol/images/junglecodeschool.jpg');
 }
 
-.feature__transparent {
+.feature__transparent,
+%feature__transparent {
   padding: 5rem 1rem;
   margin: auto;
   min-width: 390px;
@@ -18,7 +20,8 @@
   background-color: rgba(black, .75);
 }
 
-.feature__title {
+.feature__title,
+%feature__title {
   margin: auto;
   max-width: 600px;
   text-align: center;
@@ -33,7 +36,8 @@
   }
 }
 
-.feature__title-description {
+.feature__title-description,
+%feature__title-description {
   margin: auto;
   padding: 2rem 2rem 1rem 2rem;
   max-width: 500px;
@@ -49,7 +53,8 @@
   }
 }
 
-.feature__button {
+.feature__button,
+%feature__button {
   display: block;
   max-width: 245px;
   margin: 1.3rem auto 0;
@@ -64,3 +69,6 @@
   font-size: 15px;
   border-radius: 5px;
 }
+
+// Fugly
+
